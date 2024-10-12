@@ -55,8 +55,20 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: space-around;
 }
+#projects a{
+    text-decoration: none;
+    color:black
+}
+#sns a{
+    text-decoration:none;
 
-
+}
+#sns a:hover{
+    font-size: 50px;
+    border:500px;
+    color:yellow;
+    background-color:black;
+}
 
 
 /* モバイルデバイス向け（スマホなど） */
