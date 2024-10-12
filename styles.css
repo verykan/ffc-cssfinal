@@ -1,56 +1,85 @@
-#navbar{
-    position:fixed;
-    top:0;
+* {
+
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
     right: 0;
     left: 0;
     z-index: 100;
     background-color: rgb(165, 193, 193);
-    display:flex;
-    padding:0;
-    margin:0;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
-li{
-    list-style-type: none; 
-    color:azure
-    
 
+li {
+    list-style-type: none;
+    color: azure
 }
+
 li a {
     text-decoration: none;
-    color:rgb(100, 56, 56);
+    color: rgb(100, 56, 56);
     font-weight: bold;
 }
-li a:hover{
-color:violet;
-font-size: 20px;
-background-color: yellowgreen;
+
+li a:hover {
+    color: purple;
+    font-size: 20px;
+    background-color: yellow;
 }
-#welcome-section{
-    height:100vh;
-    padding-top:100px;
+
+#welcome-section {
+    height: 100vh;
+    padding-top: 100px;
     background-color: blueviolet;
-    display: flex;
+    padding: 90px;
+    text-align: center;
+
 }
+
+img {
+    display: block;
+    width: 100%;
+}
+
+#projects {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-around;
+}
+
+
+
+
 /* モバイルデバイス向け（スマホなど） */
 @media (max-width: 576px) {
     font-size: 10px;
-    .nav-bar{
+
+    .nav-bar {
         flex-wrap: wrap;
     }
-  }
-  
-  /* 小型タブレット向け */
-  @media (min-width: 577px) and (max-width: 768px) {
-   font-size: 12px;
-  }
-  
-  /* 中型タブレット、または小型デスクトップ向け */
-  @media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* 小型タブレット向け */
+@media (min-width: 577px) and (max-width: 768px) {
+    font-size: 12px;
+}
+
+/* 中型タブレット、または小型デスクトップ向け */
+@media (min-width: 769px) and (max-width: 1024px) {
     font-size: 14px;
-  }
-  
-  /* 大型デスクトップ向け */
-  @media (min-width: 1025px) {
+}
+
+/* 大型デスクトップ向け */
+@media (min-width: 1025px) {
     font-size: 18px;
 
-  }
+}
